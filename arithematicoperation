@@ -16,3 +16,8 @@ do
 
 done
 echo sorted array result : ${r[@]}
+echo "sorted in desending order : "
+for((i=0; i<=${#r[@]}; i++))
+do
+	echo "${r[i]}"
+done | sort -nr
